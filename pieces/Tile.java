@@ -1,3 +1,5 @@
+package pieces;
+
 import pieces.Piece;
 
 /**
@@ -7,11 +9,15 @@ import pieces.Piece;
 public class Tile {
 
     final int tileID;
-    Piece piece;
+    private Piece piece;
 
     public Tile(int tileID, Piece piece) {
         this.tileID = tileID;
         this.piece = piece;
+    }
+
+    public Piece getPiece() {
+        return this.piece;
     }
 
     @Override
